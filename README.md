@@ -10,4 +10,4 @@ Load wasm.html with the polyfill libraries in the same directory to used the pol
 
 ## WebAssembly prototype interpreter text format
 
-euclidean-text.wasm is the euclidean module written in the text format from https://github.com/WebAssembly/spec/ml-proto. It can be run using the interpreter from that repo. 
+euclidean-text.wasm is the euclidean module written in the text format from https://github.com/WebAssembly/spec/ml-proto. It can be run using the interpreter from my fork of that repo, which adds sqrt for floats: https://github.com/d3spis3d/spec.
