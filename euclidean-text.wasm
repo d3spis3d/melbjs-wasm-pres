@@ -1,0 +1,22 @@
+(module
+  ;;Square function
+  (func (param f64) (result f64)
+    (return (mul.f64 (getlocal 0) (getlocal 0)))
+  )
+
+  ;;Euclidean distance function
+  (func (param f64) (param f64) (param f64) (param f64) (result f64)
+    (local f64)
+    (local f64)
+    (setlocal 4 (sub.f64 (getlocal 0) (getlocal 2)))
+    (setlocal 5 (sub.f64 (getlocal 1) (getlocal 3)))
+    (setlocal 4 (call 0 (getlocal 4)))
+    (setlocal 5 (call 0 (getlocal 5)))
+    (setlocal 4 (add.f64 (getlocal 4) (getlocal 5)))
+    (return (sqrt.f64 (getlocal 4)))
+  )
+
+  (export 0 1)
+)
+
+(invoke 1 (const.f64 10.5) (const.f64 25.1) (const.f64 107.22) (const.f64 89.5))
