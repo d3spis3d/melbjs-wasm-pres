@@ -149,7 +149,7 @@
           Module.print('');
         }
 
-        var promise = loadWebAssembly("file:///home/dan/melbjs/demo/euclidean.wasm");
+        var promise = loadWebAssembly("file:///home/dan/melbjs/demo/euclidean-polyfill.wasm");
         var fast;
 
         promise.then(function(AsmModule) {
